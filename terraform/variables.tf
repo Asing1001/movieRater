@@ -25,11 +25,6 @@ variable "node_env" {
   default = true
 }
 
-variable "keep_alive" {
-  default     = false
-  description = "whether to keep request the website_url to make it awake"
-}
-
 variable "website_url" {
   default     = ""
   description = "if you set to true, the application will request website_url in every 15 seconds to keep it awake."

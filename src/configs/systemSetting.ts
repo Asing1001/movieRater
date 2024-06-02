@@ -4,7 +4,6 @@ export const systemSetting = {
   enableGraphiql: process.env.ENABLE_GRAPHIQL === 'true',
   enableScheduler: process.env.ENABLE_SCHEDULER === 'true',
   isProduction: process.env.NODE_ENV === 'production',
-  keepAlive: process.env.KEEP_ALIVE === 'true',
   redisUrlForApiCache: process.env.REDIS_URL || 'redis://localhost:6380/',
   redisUrlForScheduler: process.env.REDISCLOUD_URL || 'redis://localhost:6380/',
   taskTriggerKey: process.env.TASK_TRIGGER_KEY || 'taskTriggerKey',

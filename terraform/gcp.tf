@@ -68,11 +68,6 @@ resource "google_cloud_run_v2_service" "main" {
       }
 
       env {
-        name  = "KEEP_ALIVE"
-        value = var.keep_alive
-      }
-
-      env {
         name  = "REDIS_URL"
         value = "redis://default:${upstash_redis_database.main.password}@${upstash_redis_database.main.endpoint}:${upstash_redis_database.main.port}"
       }
